@@ -5,7 +5,8 @@ class UsersController < ApplicationController
   def show
   	@user = User.find(params[:id])
   	@books = @user.books
-  	@book = Book.new #new bookの新規投稿で必要（保存処理はbookコントローラー側で実施）
+    @book = Book.new #new bookの新規投稿で必要（保存処理はbookコントローラー側で実施）
+
   end
 
   def index
@@ -29,7 +30,7 @@ end
 
 private
 def user_params
-  params.require(:user).permit(:name, :introduction, :profile_image)
+  params.require(:user).permit(:name, :introduction, :profile_image,:postcode, :prefecture_code, :address_city, :address_street,:latitude,:longitude)
 end
 
   #url直接防止　メソッドを自己定義してbefore_actionで発動。

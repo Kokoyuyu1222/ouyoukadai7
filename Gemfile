@@ -75,3 +75,16 @@ gem "refile", require: "refile/rails", github: 'manfe/refile'
 gem "refile-mini_magick"
 
 gem 'jquery-rails'
+gem 'pry-byebug'
+
+gem 'jp_prefecture'
+
+gem 'dotenv-rails'
+
+gem 'geocoder'
+
+gem 'gmaps4rails'
+
+gem 'http'
+gem 'dotenv-rails'
+
